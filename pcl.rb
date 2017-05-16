@@ -77,7 +77,7 @@ class Pcl < Formula
     if build.with? "openni2"
       ENV.append "OPENNI2_INCLUDE", "#{Formula["openni2"].opt_include}/ni2"
       ENV.append "OPENNI2_LIB", "#{Formula["openni2"].opt_lib}/ni2"
-      args << "-DBUILD_OPENNI2:BOOL=ON"
+      args << "-DWITH_OPENNI2:BOOL=ON"
     end
 
     if build.with? "apps"
@@ -108,6 +108,7 @@ class Pcl < Formula
 
     if build.with? "openni"
       args << "-DOPENNI_INCLUDE_DIR=#{Formula["openni"].opt_include}/ni"
+      args << "-DWITH_OPENNI:BOOL=ON"
     else
       args << "-DCMAKE_DISABLE_FIND_PACKAGE_OpenNI:BOOL=TRUE"
     end
