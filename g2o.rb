@@ -6,6 +6,8 @@ class G2o < Formula
   sha256 "31abd5f4acf8407c18318b04f3ffc867c8ea7de89f18d51f9e92eb734d523b24"
   revision 2
 
+  head  "https://github.com/RainerKuemmerle/g2o.git"
+  
   bottle do
     sha256 "f9ff7fa45de9e01f08f562e9e2af1acd135c22e40076fab94a383642827e0b46" => :sierra
     sha256 "368e47a06a7b29f060faa3900965501b3b280868e59760f2bb58d3e080429f18" => :el_capitan
