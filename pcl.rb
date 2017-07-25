@@ -7,7 +7,7 @@ class Pcl < Formula
   sha256 "9e54b0c1b59a67a386b9b0f4acb2d764272ff9a0377b825c4ed5eedf46ebfcf4"
   revision 7
 
-  head "https://github.com/PointCloudLibrary/pcl.git"
+  head "https://github.com/ttoocs/pcl.git", :branch => oni2_input
 
   bottle do
     sha256 "c4b95697e9a9fe675e47d76176431d93e48f2c77ae774e975d727ff146bcda07" => :sierra
